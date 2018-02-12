@@ -19,7 +19,7 @@ namespace ReportsApplication1
 {
     public class clsGenerateLettersWC
     {
-        public static bool blFoundFont = true;
+        public static bool blFoundFont = true; 
         //static CONNECTION con = new CONNECTION();
 
         // Get connection string
