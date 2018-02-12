@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PODFileProcessor", "PODFileProcessor\PODFileProcessor.vbproj", "{AE4C85AE-D2D4-42AE-9571-62B361DEA88D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vm-host:8080/tfs/usai%20development
+		SccProjectUniqueName0 = PODFileProcessor\\PODFileProcessor.vbproj
+		SccProjectName0 = PODFileProcessor
+		SccLocalPath0 = PODFileProcessor
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE4C85AE-D2D4-42AE-9571-62B361DEA88D}.Debug|x86.ActiveCfg = Debug|x86
+		{AE4C85AE-D2D4-42AE-9571-62B361DEA88D}.Debug|x86.Build.0 = Debug|x86
+		{AE4C85AE-D2D4-42AE-9571-62B361DEA88D}.Release|x86.ActiveCfg = Release|x86
+		{AE4C85AE-D2D4-42AE-9571-62B361DEA88D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

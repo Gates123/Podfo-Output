@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23A6DB66-D2E5-4E9D-BE27-F542B1EB3FA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportsApplication1</RootNamespace>
+    <AssemblyName>ReportsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoEmail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\DLL Repository\AutoEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="ceTe.DynamicPDF.40, Version=8.0.1.40, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\DLL Repository\ceTe.DynamicPDF.40.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UsaQREncoder">
+      <HintPath>..\..\..\..\..\..\..\..\DLL Repository\UsaQREncoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\DLL Repository\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACO\PODFODataSetACO.Designer.cs" />
+    <Compile Include="clsArchiveBatch.cs" />
+    <Compile Include="clsAuto.cs" />
+    <Compile Include="clsBatchInfo.cs" />
+    <Compile Include="clsEmail.cs" />
+    <Compile Include="clsGenerateLetters.cs" />
+    <Compile Include="clsGenerateLettersWC.cs" />
+    <Compile Include="clsGetBatchSort.cs" />
+    <Compile Include="clsLog.cs" />
+    <Compile Include="clsManageMTProcess.cs" />
+    <Compile Include="clsMerge.cs" />
+    <Compile Include="clsMove.cs" />
+    <Compile Include="CONNECTION.cs" />
+    <Compile Include="CPC\PODFODataSetCPC.Designer.cs" />
+    <Compile Include="DIS\PODFODataSetDIS.Designer.cs" />
+    <Compile Include="ENT\PODFODataSetENT.Designer.cs" />
+    <Compile Include="Enum\LetterTypes.cs" />
+    <Compile Include="clsJobTicket.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MBP\PODFODataSetMBP.Designer.cs" />
+    <Compile Include="PODFODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PODFODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PODFODataSet1.cs">
+      <DependentUpon>PODFODataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PODFODataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PODFODataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ACO\ACOINAENG.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACO\ACOINASP.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINSASPA.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINRSASPA.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINSAENG.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINRSAENG.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINUENG.rdlc" />
+    <EmbeddedResource Include="ACO\ACOINUSPA.rdlc" />
+    <EmbeddedResource Include="ACO\ACOOUTAENG.rdlc" />
+    <EmbeddedResource Include="ACO\ACOOUTASPA.rdlc" />
+    <EmbeddedResource Include="ACO\ACOOUTUENG.rdlc" />
+    <EmbeddedResource Include="ACO\ACOOUTUSPA.rdlc" />
+    <EmbeddedResource Include="ACO\Archive 6-20-2016\ACOOUTAENG.rdlc" />
+    <EmbeddedResource Include="CPC\CPCOUTENG.rdlc" />
+    <EmbeddedResource Include="CPC\CPCOUTRENG.rdlc" />
+    <EmbeddedResource Include="CPC\CPCOUTRSPA.rdlc" />
+    <EmbeddedResource Include="CPC\CPCOUTSPA.rdlc" />
+    <EmbeddedResource Include="DIS\DISDMA_MAENG.rdlc" />
+    <EmbeddedResource Include="DIS\DISDMA_MASPA.rdlc" />
+    <EmbeddedResource Include="DIS\DISDPD_PDAENG.rdlc" />
+    <EmbeddedResource Include="DIS\DISDPD_PDASPA.rdlc" />
+    <EmbeddedResource Include="DIS\DISOPT_PDPENG.rdlc" />
+    <EmbeddedResource Include="DIS\DISOPT_PDPSPA.rdlc" />
+    <EmbeddedResource Include="ENT\ENTENMBP.rdlc" />
+    <EmbeddedResource Include="ENT\ENTENMBP_SPAN.rdlc" />
+    <EmbeddedResource Include="ENT\ENTENNGD_SPAN.rdlc" />
+    <EmbeddedResource Include="ENT\ENTENNGD.rdlc" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_AE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_DA_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_NE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_RAEP_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_RAWE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_RS_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12312015\MBP_RS_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_AE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_DA_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_NE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_AE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_DA_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_NE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_AE_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_AE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_DA_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_DA_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_NE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_PREP_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_PREP_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_PRWE_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_PRWE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_RAEP_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_RAWE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_RS_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP TO BE RELEASED AFTER 12012015\MBP_RS_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_RAEP_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_RAWE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_RS_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP before 12_19_2015\MBP_RS_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RAEP_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RAEP_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RAWE_SPAN.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RAWE_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RS_ENG.rdlc" />
+    <EmbeddedResource Include="MBP\MBP_RS_SPAN.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_AE_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_DA_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_NE_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_PREP_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_PRWE_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_RAEP_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_RAWE_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_RS_ENG.rdlc" />
+    <EmbeddedResource Include="ReportsApplication1\ReportsApplication1\MBP_RS_SPAN.rdlc" />
+    <EmbeddedResource Include="Reports\Reports_Letter_Count.rdlc" />
+    <None Include="ACO\PODFODataSetACO.xsc">
+      <DependentUpon>PODFODataSetACO.xsd</DependentUpon>
+    </None>
+    <None Include="ACO\PODFODataSetACO.xsd" />
+    <None Include="ACO\PODFODataSetACO.xss">
+      <DependentUpon>PODFODataSetACO.xsd</DependentUpon>
+    </None>
+    <None Include="CPC\PODFODataSetCPC.xsc">
+      <DependentUpon>PODFODataSetCPC.xsd</DependentUpon>
+    </None>
+    <None Include="CPC\PODFODataSetCPC.xsd" />
+    <None Include="CPC\PODFODataSetCPC.xss">
+      <DependentUpon>PODFODataSetCPC.xsd</DependentUpon>
+    </None>
+    <None Include="DIS\PODFODataSetDIS.xsc">
+      <DependentUpon>PODFODataSetDIS.xsd</DependentUpon>
+    </None>
+    <None Include="DIS\PODFODataSetDIS.xsd" />
+    <None Include="DIS\PODFODataSetDIS.xss">
+      <DependentUpon>PODFODataSetDIS.xsd</DependentUpon>
+    </None>
+    <None Include="Documents\PODFOJOBTICKET.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ENT\PODFODataSetENT.xsc">
+      <DependentUpon>PODFODataSetENT.xsd</DependentUpon>
+    </None>
+    <None Include="ENT\PODFODataSetENT.xsd" />
+    <None Include="ENT\PODFODataSetENT.xss">
+      <DependentUpon>PODFODataSetENT.xsd</DependentUpon>
+    </None>
+    <None Include="MBP\PODFODataSetMBP.xsc">
+      <DependentUpon>PODFODataSetMBP.xsd</DependentUpon>
+    </None>
+    <None Include="MBP\PODFODataSetMBP.xsd" />
+    <None Include="MBP\PODFODataSetMBP.xss">
+      <DependentUpon>PODFODataSetMBP.xsd</DependentUpon>
+    </None>
+    <None Include="PODFODataSet.xsc">
+      <DependentUpon>PODFODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PODFODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PODFODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PODFODataSet.xss">
+      <DependentUpon>PODFODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PODFODataSet1.xsc">
+      <DependentUpon>PODFODataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PODFODataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PODFODataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PODFODataSet1.xss">
+      <DependentUpon>PODFODataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+# Deploy Configuration for PODFO
+# Copy Main (Manual) and Automated to deploy folder
+#  the ".\" path is relative to the Folder of the Deploy.txt file
+
+name PODFO
+
+Copy .\Main\bin\x64\Debug
+copy .\AutoMated\bin\x64\Debug
+#copy .\Main\bin\x64\debug\ReportsApplication1.pdb
+#copy .\main\bin\x64\debug\*.dll
+
+# Update the *.config files to change key="UseTestDB" to value="False"
+#UpdateConfig 
